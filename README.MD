@@ -15,6 +15,7 @@ We are utilizing 64pixel art style
 - minimap
 
 ### for later we will do
+
 - Quests (these will be more gameplay than talking, no talking if possible, similar to bounties in GW2)
 - bosses from the quests
 - varying enemies (diff sizes, etc)
