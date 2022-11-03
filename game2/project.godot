@@ -11,7 +11,9 @@ config_version=4
 [application]
 
 config/name="The adventures of Christopher"
+config/description="These are the adventures of christophrer"
 run/main_scene="res://map.tscn"
+config/icon="res://assets/christopher.png"
 
 [gui]
 
