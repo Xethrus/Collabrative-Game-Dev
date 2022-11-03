@@ -10,19 +10,8 @@ config_version=4
 
 [application]
 
-config/name="Game"
-<<<<<<< HEAD
-config/description="Jason and Stevie's first game in Godot!"
-<<<<<<< HEAD
-run/main_scene="res://level.tscn"
-config/icon="res://assets/christopher.png"
-=======
-run/main_scene="res://Christopher.tscn"
->>>>>>> parent of 98d2e85 (made the level)
-=======
-run/main_scene="res://Christopher.tscn"
-config/icon="res://christopher.png"
->>>>>>> parent of 8ef458b (Made a game level)
+config/name="The adventures of Christopher"
+run/main_scene="res://map.tscn"
 
 [gui]
 
@@ -35,14 +24,14 @@ up={
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
-down={
-"deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
- ]
-}
 left={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":65,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+down={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
 right={

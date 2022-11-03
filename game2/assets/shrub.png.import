@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/christopher.png-a0661a4336bed994827855e64653f230.stex"
+path="res://.import/shrub.png-ae4c348717840c46d1e90900f7d9008b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/christopher.png"
-dest_files=[ "res://.import/christopher.png-a0661a4336bed994827855e64653f230.stex" ]
+source_file="res://assets/shrub.png"
+dest_files=[ "res://.import/shrub.png-ae4c348717840c46d1e90900f7d9008b.stex" ]
 
 [params]
 
