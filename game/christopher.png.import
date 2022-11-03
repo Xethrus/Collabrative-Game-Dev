@@ -2,15 +2,24 @@
 
 importer="texture"
 type="StreamTexture"
+<<<<<<< HEAD:game/Assets/tile path.png.import
 path="res://.import/tile path.png-7dd852eab0ffd35716a9b0de4d3d60c0.stex"
+=======
+path="res://.import/christopher.png-a16f48b0fccf5207b84213927092ce6c.stex"
+>>>>>>> parent of 8ef458b (Made a game level):game/christopher.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<< HEAD:game/Assets/tile path.png.import
 source_file="res://Assets/tile path.png"
 dest_files=[ "res://.import/tile path.png-7dd852eab0ffd35716a9b0de4d3d60c0.stex" ]
+=======
+source_file="res://christopher.png"
+dest_files=[ "res://.import/christopher.png-a16f48b0fccf5207b84213927092ce6c.stex" ]
+>>>>>>> parent of 8ef458b (Made a game level):game/christopher.png.import
 
 [params]
 

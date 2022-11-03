@@ -13,11 +13,16 @@ config_version=4
 config/name="Game"
 <<<<<<< HEAD
 config/description="Jason and Stevie's first game in Godot!"
+<<<<<<< HEAD
 run/main_scene="res://level.tscn"
 config/icon="res://assets/christopher.png"
 =======
 run/main_scene="res://Christopher.tscn"
 >>>>>>> parent of 98d2e85 (made the level)
+=======
+run/main_scene="res://Christopher.tscn"
+config/icon="res://christopher.png"
+>>>>>>> parent of 8ef458b (Made a game level)
 
 [gui]
 
