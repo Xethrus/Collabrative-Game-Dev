@@ -11,7 +11,9 @@ config_version=4
 [application]
 
 config/name="Game"
+config/description="Jason and Stevie's first game in Godot!"
 run/main_scene="res://Christopher.tscn"
+config/icon="res://christopher.png"
 
 [gui]
 
