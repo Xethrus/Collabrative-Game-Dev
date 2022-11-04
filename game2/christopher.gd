@@ -17,7 +17,7 @@ func _ready():
 #func _process(delta):
 #	pass
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	velocity = Vector2()
 	
 	if Input.is_action_pressed("up"):

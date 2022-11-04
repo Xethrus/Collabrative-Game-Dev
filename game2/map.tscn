@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://ground.tres" type="TileSet" id=1]
 [ext_resource path="res://christopher.tscn" type="PackedScene" id=2]
 [ext_resource path="res://objects.tres" type="TileSet" id=3]
+[ext_resource path="res://green_slime.tscn" type="PackedScene" id=4]
+[ext_resource path="res://green_slime.gd" type="Script" id=5]
 
 [node name="Node2D" type="Node2D"]
 
@@ -22,3 +24,6 @@ tile_data = PoolIntArray( -458763, 0, 0, -458762, 0, 0, -458761, 0, 0, -458760, 
 
 [node name="Camera2D2" type="Camera2D" parent="christopher"]
 current = true
+
+[node name="green_slime" parent="." instance=ExtResource( 4 )]
+script = ExtResource( 5 )

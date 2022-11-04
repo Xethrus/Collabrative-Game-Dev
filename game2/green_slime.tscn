@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://slimy jump.tres" type="SpriteFrames" id=1]
+
+[sub_resource type="Animation" id=1]
+resource_name = "my slime"
+
+[node name="green_slime" type="KinematicBody2D"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+"anims/my slime" = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="AnimationPlayer"]
+frames = ExtResource( 1 )
+frame = 7
+playing = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -15, 32, 17, 32, 23, 25, 22, -7, 7, -16, -5, -16, -19, -9, -19, 23 )
