@@ -13,7 +13,7 @@ config_version=4
 config/name="The adventures of Christopher"
 config/description="These are the adventures of christophrer"
 run/main_scene="res://environment/map.tscn"
-config/icon="res://assets/christopher.png"
+config/icon="res://assets/visual/beta christopher.png"
 
 [gui]
 

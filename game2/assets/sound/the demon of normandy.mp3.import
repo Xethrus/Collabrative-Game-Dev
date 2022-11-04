@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/the demon of normandy.mp3-641ac8e29bb78cafe19ade5d632a73f4.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/the demon of normandy.mp3"
+dest_files=[ "res://.import/the demon of normandy.mp3-641ac8e29bb78cafe19ade5d632a73f4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
