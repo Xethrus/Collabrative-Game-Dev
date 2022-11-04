@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://christopher.gd" type="Script" id=1]
+[ext_resource path="res://christopher/christopher.gd" type="Script" id=1]
 [ext_resource path="res://assets/christopher.png" type="Texture" id=2]
 
 [node name="christopher" type="KinematicBody2D"]
@@ -11,3 +11,7 @@ texture = ExtResource( 2 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PoolVector2Array( -18, 21, 19, 21, 22, 19, 22, 9, 20, 5, 20, -10, 13, -23, -7, -24, -18, -10, -19, 5, -22, 8, -22, 17 )
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="AnimationTree"]
