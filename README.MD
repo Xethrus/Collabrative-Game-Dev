@@ -38,9 +38,9 @@ As of writing this, we have made quite a bit of progress since we started develo
   - as of writing this, the green slime has no AI of any kind, but has an animated jump that has amazing fluidity, courtesy of @Xethrus
 
 First looks at the characters so far:
-![alt text](https://github.com/Xethrus/Collabrative-Game-Dev/assets/Demo%20photos/alpha%20characters.png)
+![alt text](https://github.com/Xethrus/Collabrative-Game-Dev/Demo%20photos/alpha%20characters.png)
 
 Our testing map:
-![alt text](https://github.com/Xethrus/Collabrative-Game-Dev/assets/Demo%20photos/alpha%20test%20map.png)
+![alt text](https://github.com/Xethrus/Collabrative-Game-Dev/Demo%20photos/alpha%20test%20map.png)
 
 @LordOfDeadbush
