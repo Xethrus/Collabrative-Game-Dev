@@ -8,8 +8,7 @@ extends KinematicBody2D
 var speed = 200
 var velocity = Vector2()
 var health = 100
-var facing = "right"
-var walking = "right"
+var walkingleft = false;
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -33,16 +32,25 @@ func _physics_process(_delta):
 	
 	move_and_slide(velocity)
 	# look_at(get_global_mouse_position())
-
-func _fixed_process(delta):
 	update_sprite();
 
 func update_sprite():
-
-	var angle = rad2deg(get_floor_velocity().angle());
-	if angle < 0: angle += 360;
+	var animator = get_node("christopher_animations")
 	
-	if 0 < angle < 180: facing = "right"; 
-	else: facing = "left";
+	var facingleft = false;
+	var angle = rad2deg($christopher_animations.global_position.angle_to_point(get_global_mouse_position()));
+	if abs(angle) < 90: facingleft = true;
+	
+	if Input.is_action_pressed("left") and not Input.is_action_pressed("right"):
+		walkingleft = true;
+	if Input.is_action_pressed("right") and not Input.is_action_pressed("left"):	
+		walkingleft = false;
+	
+	if !facingleft: animator.play("w_right", (facingleft != walkingleft)); else: animator.play("w_left", (facingleft != walkingleft));
+	
+	# if walkingleft: print_debug("going left"); else: print_debug("going right")
+	# if animator.flip_h: print_debug("facing left"); else: print_debug("facing right")
+	# print_debug(angle);
+	
 	
 	# TODO: finish this with updating walking variable and updating animations
