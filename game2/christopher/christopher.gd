@@ -30,6 +30,9 @@ func _physics_process(_delta):
 	if Input.is_action_pressed("right"):
 		velocity.x += speed
 	
+	velocity = velocity.clamped(speed)
+	
+	
 	move_and_slide(velocity)
 	# look_at(get_global_mouse_position())
 	update_sprite();

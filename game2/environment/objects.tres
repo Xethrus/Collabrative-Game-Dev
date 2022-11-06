@@ -1,7 +1,7 @@
-[gd_resource type="TileSet" load_steps=8 format=2]
+[gd_resource type="TileSet" load_steps=29 format=2]
 
 [ext_resource path="res://assets/visual/shrub.png" type="Texture" id=1]
-[ext_resource path="res://assets/visual/fences_spritesheet.png" type="Texture" id=2]
+[ext_resource path="res://assets/visual/fences spritesheet.png" type="Texture" id=2]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 16, 16, 48, 16, 48, 48, 16, 48 )
@@ -9,14 +9,93 @@ points = PoolVector2Array( 16, 16, 48, 16, 48, 48, 16, 48 )
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 14.8988, 41.6818, 15.3025, 41.278, 19.071, 38.1825, 17.0522, 32.6644, 10.0536, 29.5689, 9.38066, 28.223, 11.8032, 26.4733, 17.3213, 26.7425, 21.2244, 30.511, 12.7454, 15.5717, 10.0536, 14.0912, 14.6296, 15.0334, 21.4936, 24.3199, 22.3011, 17.0522, 27.6846, 5.34303, 31.5877, 11.1303, 32.2606, 18.5326, 39.3938, 12.88, 41.1434, 12.88, 37.9133, 16.2447, 38.99, 17.0522, 37.7787, 19.8785, 38.8554, 24.0508, 48.2766, 15.3025, 51.7759, 15.7063, 46.5269, 25.6658, 46.5269, 32.3952, 50.6992, 28.223, 53.9293, 31.5877, 50.43, 32.6644, 47.6036, 35.087, 54.4676, 36.4328, 55.5443, 37.5095, 55.1405, 39.3938, 52.718, 40.4705, 51.1029, 38.99, 50.8337, 42.2201, 46.2578, 42.3547, 45.3156, 41.278, 39.7975, 41.1434, 38.1825, 42.2201, 34.414, 42.3547, 33.2027, 43.4314, 31.1839, 43.2968, 29.7034, 41.9509, 24.3199, 42.3547, 19.2056, 42.2201, 18.6672, 43.7006 )
 
-[sub_resource type="ConvexPolygonShape2D" id=3]
-points = PoolVector2Array( 24.048, 64, 23.7689, 63.9566, 24.327, 19.0245, 26.8388, 19.5826, 26.8388, 11.2102, 30.4668, 7.58214, 35.7694, 7.30305, 39.9556, 9.81479, 40.7928, 59.7704, 27.676, 59.2122, 27.3969, 63.9566 )
+[sub_resource type="NavigationPolygon" id=3]
+vertices = PoolVector2Array( 27.1463, 63.485, 23.5931, 63.6465, 23.5931, 19.071, 26.9848, 58.9629, 26.9848, 18.9095, 39.5822, 10.3497, 39.9052, 59.1244, 26.9848, 10.3497, 30.8609, 6.95808, 35.7061, 6.95808 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 3, 2, 4 ), PoolIntArray( 5, 6, 3, 4 ), PoolIntArray( 5, 4, 7, 8, 9 ) ]
+outlines = [ PoolVector2Array( 23.5931, 63.6465, 23.5931, 19.071, 26.9848, 18.9095, 26.9848, 10.3497, 30.8609, 6.95808, 35.7061, 6.95808, 39.5822, 10.3497, 39.9052, 59.1244, 26.9848, 58.9629, 27.1463, 63.485 ) ]
 
-[sub_resource type="ConvexPolygonShape2D" id=4]
-points = PoolVector2Array( 27.0275, 57.8168, 27.0275, 57.8168, 27.0275, 10.652, 30.0974, 7.02398, 35.6791, 7.02398, 39.5862, 9.81479, 39.8653, 19.0245, 42.6561, 19.0245, 42.6561, 63.6775, 39.8653, 63.9566, 39.3071, 58.0959 )
+[sub_resource type="ConvexPolygonShape2D" id=11]
+points = PoolVector2Array( 23.7547, 19.071, 26.9848, 18.748, 26.8233, 9.86518, 31.1839, 6.63507, 35.8676, 6.95808, 40.2282, 10.3497, 40.5512, 58.3168, 26.8233, 57.9938, 26.9848, 63.6465, 23.7547, 63.6465 )
 
-[sub_resource type="ConvexPolygonShape2D" id=5]
-points = PoolVector2Array( 26.6581, 56.9796, 27.2163, 56.9796, 27.2163, 10.9311, 31.4025, 7.30306, 35.3097, 7.02398, 39.2168, 9.53571, 39.775, 14.8383, 63.776, 14.001, 63.4969, 38.5602, 40.6122, 38.2811, 40.3331, 58.9332, 26.1, 59.7704 )
+[sub_resource type="ConvexPolygonShape2D" id=19]
+points = PoolVector2Array( 27.1025, 13.6941, 27.264, 9.49492, 31.1401, 7.07234, 35.5007, 6.91083, 39.3769, 10.3024, 39.5384, 0.289108, 42.93, 0.289108, 42.93, 38.2429, 40.0229, 38.2429, 40.5074, 59.0771, 27.1025, 59.7231, 26.7794, 38.0814, 0.131035, 38.8889, 0.131035, 13.8556 )
+
+[sub_resource type="ConvexPolygonShape2D" id=20]
+points = PoolVector2Array( 23.667, 63.5993, 23.667, 19.0237, 26.7356, 19.0237, 26.8971, 10.6255, 31.4193, 6.74933, 35.6184, 6.74933, 39.8176, 10.3024, 39.8176, 14.9861, 63.7204, 13.8556, 63.8819, 39.2119, 39.4946, 37.9199, 40.1406, 58.5926, 26.7356, 58.2696, 27.0587, 63.5993 )
+
+[sub_resource type="ConvexPolygonShape2D" id=21]
+points = PoolVector2Array( 0.366394, 39.0504, 0.366394, 14.0171, 26.6918, 13.6941, 26.6918, 9.65642, 31.0525, 6.74933, 35.8976, 6.91083, 40.0968, 10.464, 40.2583, 19.1853, 43.3269, 19.1853, 43.1654, 63.5993, 39.9353, 63.7608, 40.0968, 59.2386, 27.4993, 58.9156, 26.6918, 38.2429 )
+
+[sub_resource type="ConvexPolygonShape2D" id=23]
+points = PoolVector2Array( 0.22868, 40.0838, 0.22868, 15.0505, 27.1463, 15.0505, 26.8771, 10.0707, 31.3185, 6.84061, 35.8945, 7.10977, 40.2013, 11.282, 39.7975, 15.0505, 63.7542, 13.57, 64, 38.8725, 40.3359, 38.065, 40.3359, 59.0607, 27.1463, 58.657, 26.7425, 38.7379 )
+
+[sub_resource type="ConvexPolygonShape2D" id=24]
+points = PoolVector2Array( 26.9409, 9.53236, 31.3823, 6.57143, 35.9583, 6.84061, 39.8614, 9.93613, 40.2652, 14.9159, 63.6834, 13.7046, 63.5489, 39.1417, 39.996, 38.065, 40.6689, 59.0607, 27.0755, 59.3299, 26.5372, 38.3342, 0.0233612, 39.0071, 0, 13.57, 27.2101, 13.9738 )
+
+[sub_resource type="ConvexPolygonShape2D" id=25]
+points = PoolVector2Array( 42.8862, 0.111206, 43.1553, 37.9304, 40.0598, 37.9304, 40.0598, 59.1953, 27.0048, 59.0607, 27.0048, 63.7713, 23.6401, 64, 23.5055, 18.9535, 26.7356, 18.9535, 27.0048, 10.0707, 30.9079, 6.84061, 35.4838, 7.10977, 39.3869, 9.80154, 39.5215, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=26]
+points = PoolVector2Array( 42.9569, 0.185387, 43.0915, 37.4662, 40.1306, 37.6008, 40.5343, 59.0003, 27.0755, 59.2695, 26.9409, 10.1449, 30.5748, 7.04937, 36.0929, 6.64561, 39.7268, 10.1449, 39.7268, 0 )
+
+[sub_resource type="NavigationPolygon" id=4]
+vertices = PoolVector2Array( 42.93, 18.748, 42.93, 63.808, 39.8614, 63.485, 39.8614, 58.8014, 40.0229, 18.5865, 26.7794, 58.8014, 27.264, 9.70367, 36.1468, 7.28109, 40.1844, 10.1882, 31.1401, 7.11958 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4 ), PoolIntArray( 3, 5, 6, 4 ), PoolIntArray( 7, 8, 4, 6, 9 ) ]
+outlines = [ PoolVector2Array( 42.93, 63.808, 42.93, 18.748, 40.0229, 18.5865, 40.1844, 10.1882, 36.1468, 7.28109, 31.1401, 7.11958, 27.264, 9.70367, 26.7794, 58.8014, 39.8614, 58.8014, 39.8614, 63.485 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 39.8614, 63.6465, 40.0229, 58.6399, 27.1025, 58.6399, 26.941, 10.0267, 30.8171, 7.11958, 35.8238, 7.28109, 39.8614, 10.3497, 39.8614, 18.9095, 43.0915, 18.9095, 42.7685, 63.485 )
+
+[sub_resource type="NavigationPolygon" id=5]
+vertices = PoolVector2Array( 39.8176, 14.8718, 63.5589, 13.5798, 63.5589, 38.6132, 40.6251, 38.6132, 40.6251, 59.2859, 26.8971, 58.8014, 26.8971, 10.0267, 30.4503, 6.95808, 35.7799, 6.47356, 39.6561, 10.3497 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 0, 3, 4, 5, 6, 7, 8, 9 ) ]
+outlines = [ PoolVector2Array( 63.5589, 13.5798, 39.8176, 14.8718, 39.6561, 10.3497, 35.7799, 6.47356, 30.4503, 6.95808, 26.8971, 10.0267, 26.8971, 58.8014, 40.6251, 59.2859, 40.6251, 38.6132, 63.5589, 38.6132 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 63.2359, 38.9362, 39.9791, 38.1286, 40.3021, 58.4783, 27.7047, 59.1244, 26.8971, 10.1882, 31.2578, 6.79658, 35.9414, 6.95808, 39.9791, 10.3497, 39.9791, 14.8718, 63.3974, 14.2258 )
+
+[sub_resource type="NavigationPolygon" id=6]
+vertices = PoolVector2Array( 26.6918, 38.2902, 0.204895, 38.7747, 0.527924, 14.0643, 26.8533, 13.5798, 36.2206, 6.63507, 40.0968, 10.5112, 39.7737, 59.4474, 26.8533, 59.1244, 31.0525, 6.47356, 26.6918, 10.3497 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 4, 5, 6, 7, 0, 3, 8 ), PoolIntArray( 3, 9, 8 ) ]
+outlines = [ PoolVector2Array( 26.8533, 13.5798, 0.527924, 14.0643, 0.204895, 38.7747, 26.6918, 38.2902, 26.8533, 59.1244, 39.7737, 59.4474, 40.0968, 10.5112, 36.2206, 6.63507, 31.0525, 6.47356, 26.6918, 10.3497 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( 0, 14.0643, 27.1763, 13.7413, 27.3378, 9.86518, 30.5679, 6.79658, 35.5746, 7.11958, 40.0968, 10.8342, 39.9353, 59.1244, 27.0148, 58.9629, 27.1763, 37.8056, 0.204895, 38.7747 )
+
+[sub_resource type="NavigationPolygon" id=7]
+vertices = PoolVector2Array( 23.7547, 37.782, 23.4316, 0.797241, 26.8233, 0.474236, 26.9848, 9.68005, 26.8233, 37.9435, 35.7061, 7.09596, 40.7127, 10.8106, 40.7127, 59.4238, 26.8233, 59.2622, 31.0224, 6.93446 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4 ), PoolIntArray( 5, 6, 7, 8, 4, 3, 9 ) ]
+outlines = [ PoolVector2Array( 23.4316, 0.797241, 23.7547, 37.782, 26.8233, 37.9435, 26.8233, 59.2622, 40.7127, 59.4238, 40.7127, 10.8106, 35.7061, 7.09596, 31.0224, 6.93446, 26.9848, 9.68005, 26.8233, 0.474236 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+points = PoolVector2Array( 27.1463, 0.151222, 27.4693, 9.84155, 31.3454, 6.44994, 35.8676, 7.09596, 40.3897, 10.6491, 39.5822, 59.2622, 26.9848, 59.1007, 26.9848, 37.782, 23.5931, 37.6205, 23.7547, 0.151222 )
+
+[sub_resource type="NavigationPolygon" id=8]
+vertices = PoolVector2Array( 39.5384, 10.0636, 39.6999, 0.0502853, 42.93, 0.534798, 42.93, 37.8426, 39.8614, 38.0041, 40.1844, 59.1613, 26.941, 59.3228, 26.941, 10.3866, 30.8171, 6.99502, 35.9853, 6.99502 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4 ), PoolIntArray( 5, 6, 7, 4 ), PoolIntArray( 0, 4, 7, 8, 9 ) ]
+outlines = [ PoolVector2Array( 42.93, 0.534798, 42.93, 37.8426, 39.8614, 38.0041, 40.1844, 59.1613, 26.941, 59.3228, 26.941, 10.3866, 30.8171, 6.99502, 35.9853, 6.99502, 39.5384, 10.0636, 39.6999, 0.0502853 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+points = PoolVector2Array( 26.6179, 9.84155, 31.1401, 6.61144, 35.8238, 7.09596, 39.6999, 9.84155, 39.5384, 0.474236, 43.0915, 0.474236, 42.93, 37.6205, 40.0229, 37.782, 40.1844, 58.9392, 26.7794, 59.1007 )
+
+[sub_resource type="NavigationPolygon" id=9]
+vertices = PoolVector2Array( 39.6561, 58.6768, 26.8971, 59.3228, 27.0587, 10.2251, 39.8176, 37.6811, 63.5589, 14.1013, 63.7204, 38.6501, 40.1406, 14.7473, 30.9348, 6.99502, 35.1339, 6.83351, 39.9791, 10.3866 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 4, 5, 3, 6 ), PoolIntArray( 6, 3, 2, 7, 8, 9 ) ]
+outlines = [ PoolVector2Array( 63.7204, 38.6501, 39.8176, 37.6811, 39.6561, 58.6768, 26.8971, 59.3228, 27.0587, 10.2251, 30.9348, 6.99502, 35.1339, 6.83351, 39.9791, 10.3866, 40.1406, 14.7473, 63.5589, 14.1013 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+points = PoolVector2Array( 63.7204, 39.0741, 39.9791, 38.105, 40.1406, 59.4238, 27.2202, 59.1007, 27.0587, 10.0031, 30.7733, 6.93446, 35.9414, 6.93446, 40.3021, 10.3261, 39.9791, 14.6867, 63.3974, 14.0407 )
+
+[sub_resource type="NavigationPolygon" id=10]
+vertices = PoolVector2Array( 26.5303, 37.8426, 0.043396, 38.6501, 0, 13.7783, 26.8533, 13.4552, 31.537, 6.67201, 36.0591, 6.67201, 40.2583, 10.2251, 40.0968, 59.1613, 26.8533, 58.9998, 27.0148, 10.5481 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 4, 5, 6, 7, 8, 0, 3, 9 ) ]
+outlines = [ PoolVector2Array( 0.043396, 38.6501, 26.5303, 37.8426, 26.8533, 58.9998, 40.0968, 59.1613, 40.2583, 10.2251, 36.0591, 6.67201, 31.537, 6.67201, 27.0148, 10.5481, 26.8533, 13.4552, 0, 13.7783 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=18]
+points = PoolVector2Array( 0.043396, 13.7177, 26.6918, 14.0407, 27.3378, 9.35704, 31.6985, 6.93446, 36.2206, 6.93446, 40.0968, 10.3261, 40.2583, 58.7777, 27.1763, 58.9392, 27.1763, 37.6205, 0.527924, 38.751 )
+
+[sub_resource type="ConvexPolygonShape2D" id=22]
+points = PoolVector2Array( 27.3078, 0.450607, 27.4693, 9.97943, 30.8609, 7.23384, 35.5446, 7.23384, 40.0667, 11.11, 39.7437, 15.1476, 63.9695, 13.8556, 63.6465, 39.0504, 40.2282, 38.5659, 39.7437, 59.4001, 26.6618, 59.2386, 26.5002, 37.9199, 23.5931, 37.5969, 23.7547, 0.773621 )
 
 [resource]
 0/name = "shrub.png 0"
@@ -46,7 +125,7 @@ points = PoolVector2Array( 26.6581, 56.9796, 27.2163, 56.9796, 27.2163, 10.9311,
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0
-1/name = "fences_spritesheet.png 1"
+1/name = "fences spritesheet.png 1"
 1/texture = ExtResource( 2 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
@@ -54,20 +133,21 @@ points = PoolVector2Array( 26.6581, 56.9796, 27.2163, 56.9796, 27.2163, 10.9311,
 1/tile_mode = 0
 1/occluder_offset = Vector2( 0, 0 )
 1/navigation_offset = Vector2( 0, 0 )
+1/navigation = SubResource( 3 )
 1/shape_offset = Vector2( 0, 0 )
 1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-1/shape = SubResource( 3 )
+1/shape = SubResource( 11 )
 1/shape_one_way = false
 1/shape_one_way_margin = 1.0
 1/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 3 ),
+"shape": SubResource( 11 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 1/z_index = 0
-2/name = "fences_spritesheet.png 2"
+2/name = "fences spritesheet.png 2"
 2/texture = ExtResource( 2 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
@@ -75,20 +155,21 @@ points = PoolVector2Array( 26.6581, 56.9796, 27.2163, 56.9796, 27.2163, 10.9311,
 2/tile_mode = 0
 2/occluder_offset = Vector2( 0, 0 )
 2/navigation_offset = Vector2( 0, 0 )
+2/navigation = SubResource( 4 )
 2/shape_offset = Vector2( 0, 0 )
 2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-2/shape = SubResource( 4 )
+2/shape = SubResource( 12 )
 2/shape_one_way = false
 2/shape_one_way_margin = 1.0
 2/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 4 ),
+"shape": SubResource( 12 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 2/z_index = 0
-3/name = "fences_spritesheet.png 3"
+3/name = "fences spritesheet.png 3"
 3/texture = ExtResource( 2 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
@@ -96,20 +177,21 @@ points = PoolVector2Array( 26.6581, 56.9796, 27.2163, 56.9796, 27.2163, 10.9311,
 3/tile_mode = 0
 3/occluder_offset = Vector2( 0, 0 )
 3/navigation_offset = Vector2( 0, 0 )
+3/navigation = SubResource( 5 )
 3/shape_offset = Vector2( 0, 0 )
 3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-3/shape = SubResource( 5 )
+3/shape = SubResource( 13 )
 3/shape_one_way = false
 3/shape_one_way_margin = 1.0
 3/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 5 ),
+"shape": SubResource( 13 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 3/z_index = 0
-4/name = "fences_spritesheet.png 4"
+4/name = "fences spritesheet.png 4"
 4/texture = ExtResource( 2 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
@@ -117,13 +199,21 @@ points = PoolVector2Array( 26.6581, 56.9796, 27.2163, 56.9796, 27.2163, 10.9311,
 4/tile_mode = 0
 4/occluder_offset = Vector2( 0, 0 )
 4/navigation_offset = Vector2( 0, 0 )
+4/navigation = SubResource( 6 )
 4/shape_offset = Vector2( 0, 0 )
 4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape = SubResource( 14 )
 4/shape_one_way = false
-4/shape_one_way_margin = 0.0
-4/shapes = [  ]
+4/shape_one_way_margin = 1.0
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 4/z_index = 0
-5/name = "fences_spritesheet.png 5"
+5/name = "fences spritesheet.png 5"
 5/texture = ExtResource( 2 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
@@ -131,27 +221,43 @@ points = PoolVector2Array( 26.6581, 56.9796, 27.2163, 56.9796, 27.2163, 10.9311,
 5/tile_mode = 0
 5/occluder_offset = Vector2( 0, 0 )
 5/navigation_offset = Vector2( 0, 0 )
+5/navigation = SubResource( 7 )
 5/shape_offset = Vector2( 0, 0 )
 5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 15 )
 5/shape_one_way = false
-5/shape_one_way_margin = 0.0
-5/shapes = [  ]
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 15 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 5/z_index = 0
-6/name = "fences_spritesheet.png 6"
+6/name = "fences spritesheet.png 6"
 6/texture = ExtResource( 2 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
-6/region = Rect2( 64, 64, 64, 64 )
+6/region = Rect2( 192, 192, 64, 64 )
 6/tile_mode = 0
 6/occluder_offset = Vector2( 0, 0 )
 6/navigation_offset = Vector2( 0, 0 )
+6/navigation = SubResource( 8 )
 6/shape_offset = Vector2( 0, 0 )
 6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape = SubResource( 16 )
 6/shape_one_way = false
-6/shape_one_way_margin = 0.0
-6/shapes = [  ]
+6/shape_one_way_margin = 1.0
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 16 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 6/z_index = 0
-7/name = "fences_spritesheet.png 7"
+7/name = "fences spritesheet.png 7"
 7/texture = ExtResource( 2 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
@@ -159,13 +265,21 @@ points = PoolVector2Array( 26.6581, 56.9796, 27.2163, 56.9796, 27.2163, 10.9311,
 7/tile_mode = 0
 7/occluder_offset = Vector2( 0, 0 )
 7/navigation_offset = Vector2( 0, 0 )
+7/navigation = SubResource( 9 )
 7/shape_offset = Vector2( 0, 0 )
 7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape = SubResource( 17 )
 7/shape_one_way = false
-7/shape_one_way_margin = 0.0
-7/shapes = [  ]
+7/shape_one_way_margin = 1.0
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 17 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 7/z_index = 0
-8/name = "fences_spritesheet.png 8"
+8/name = "fences spritesheet.png 8"
 8/texture = ExtResource( 2 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
@@ -173,13 +287,21 @@ points = PoolVector2Array( 26.6581, 56.9796, 27.2163, 56.9796, 27.2163, 10.9311,
 8/tile_mode = 0
 8/occluder_offset = Vector2( 0, 0 )
 8/navigation_offset = Vector2( 0, 0 )
+8/navigation = SubResource( 10 )
 8/shape_offset = Vector2( 0, 0 )
 8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape = SubResource( 18 )
 8/shape_one_way = false
-8/shape_one_way_margin = 0.0
-8/shapes = [  ]
+8/shape_one_way_margin = 1.0
+8/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 8/z_index = 0
-9/name = "fences_spritesheet.png 9"
+9/name = "fences spritesheet.png 9"
 9/texture = ExtResource( 2 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
@@ -189,11 +311,18 @@ points = PoolVector2Array( 26.6581, 56.9796, 27.2163, 56.9796, 27.2163, 10.9311,
 9/navigation_offset = Vector2( 0, 0 )
 9/shape_offset = Vector2( 0, 0 )
 9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape = SubResource( 22 )
 9/shape_one_way = false
-9/shape_one_way_margin = 0.0
-9/shapes = [  ]
+9/shape_one_way_margin = 1.0
+9/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 22 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 9/z_index = 0
-10/name = "fences_spritesheet.png 10"
+10/name = "fences spritesheet.png 10"
 10/texture = ExtResource( 2 )
 10/tex_offset = Vector2( 0, 0 )
 10/modulate = Color( 1, 1, 1, 1 )
@@ -203,11 +332,18 @@ points = PoolVector2Array( 26.6581, 56.9796, 27.2163, 56.9796, 27.2163, 10.9311,
 10/navigation_offset = Vector2( 0, 0 )
 10/shape_offset = Vector2( 0, 0 )
 10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape = SubResource( 19 )
 10/shape_one_way = false
-10/shape_one_way_margin = 0.0
-10/shapes = [  ]
+10/shape_one_way_margin = 1.0
+10/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 19 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 10/z_index = 0
-11/name = "fences_spritesheet.png 11"
+11/name = "fences spritesheet.png 11"
 11/texture = ExtResource( 2 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 1, 1, 1, 1 )
@@ -217,11 +353,18 @@ points = PoolVector2Array( 26.6581, 56.9796, 27.2163, 56.9796, 27.2163, 10.9311,
 11/navigation_offset = Vector2( 0, 0 )
 11/shape_offset = Vector2( 0, 0 )
 11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape = SubResource( 20 )
 11/shape_one_way = false
-11/shape_one_way_margin = 0.0
-11/shapes = [  ]
+11/shape_one_way_margin = 1.0
+11/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 20 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 11/z_index = 0
-12/name = "fences_spritesheet.png 12"
+12/name = "fences spritesheet.png 12"
 12/texture = ExtResource( 2 )
 12/tex_offset = Vector2( 0, 0 )
 12/modulate = Color( 1, 1, 1, 1 )
@@ -231,11 +374,18 @@ points = PoolVector2Array( 26.6581, 56.9796, 27.2163, 56.9796, 27.2163, 10.9311,
 12/navigation_offset = Vector2( 0, 0 )
 12/shape_offset = Vector2( 0, 0 )
 12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape = SubResource( 21 )
 12/shape_one_way = false
-12/shape_one_way_margin = 0.0
-12/shapes = [  ]
+12/shape_one_way_margin = 1.0
+12/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 21 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 12/z_index = 0
-13/name = "fences_spritesheet.png 13"
+13/name = "fences spritesheet.png 13"
 13/texture = ExtResource( 2 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 1, 1, 1, 1 )
@@ -245,11 +395,18 @@ points = PoolVector2Array( 26.6581, 56.9796, 27.2163, 56.9796, 27.2163, 10.9311,
 13/navigation_offset = Vector2( 0, 0 )
 13/shape_offset = Vector2( 0, 0 )
 13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape = SubResource( 23 )
 13/shape_one_way = false
-13/shape_one_way_margin = 0.0
-13/shapes = [  ]
+13/shape_one_way_margin = 1.0
+13/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 23 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 13/z_index = 0
-14/name = "fences_spritesheet.png 14"
+14/name = "fences spritesheet.png 14"
 14/texture = ExtResource( 2 )
 14/tex_offset = Vector2( 0, 0 )
 14/modulate = Color( 1, 1, 1, 1 )
@@ -259,11 +416,18 @@ points = PoolVector2Array( 26.6581, 56.9796, 27.2163, 56.9796, 27.2163, 10.9311,
 14/navigation_offset = Vector2( 0, 0 )
 14/shape_offset = Vector2( 0, 0 )
 14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+14/shape = SubResource( 24 )
 14/shape_one_way = false
-14/shape_one_way_margin = 0.0
-14/shapes = [  ]
+14/shape_one_way_margin = 1.0
+14/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 24 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 14/z_index = 0
-15/name = "fences_spritesheet.png 15"
+15/name = "fences spritesheet.png 15"
 15/texture = ExtResource( 2 )
 15/tex_offset = Vector2( 0, 0 )
 15/modulate = Color( 1, 1, 1, 1 )
@@ -273,21 +437,35 @@ points = PoolVector2Array( 26.6581, 56.9796, 27.2163, 56.9796, 27.2163, 10.9311,
 15/navigation_offset = Vector2( 0, 0 )
 15/shape_offset = Vector2( 0, 0 )
 15/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+15/shape = SubResource( 25 )
 15/shape_one_way = false
-15/shape_one_way_margin = 0.0
-15/shapes = [  ]
+15/shape_one_way_margin = 1.0
+15/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 25 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 15/z_index = 0
-16/name = "fences_spritesheet.png 16"
+16/name = "fences spritesheet.png 16"
 16/texture = ExtResource( 2 )
 16/tex_offset = Vector2( 0, 0 )
 16/modulate = Color( 1, 1, 1, 1 )
-16/region = Rect2( 192, 192, 64, 64 )
+16/region = Rect2( 64, 64, 64, 64 )
 16/tile_mode = 0
 16/occluder_offset = Vector2( 0, 0 )
 16/navigation_offset = Vector2( 0, 0 )
 16/shape_offset = Vector2( 0, 0 )
 16/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+16/shape = SubResource( 26 )
 16/shape_one_way = false
-16/shape_one_way_margin = 0.0
-16/shapes = [  ]
+16/shape_one_way_margin = 1.0
+16/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 26 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 16/z_index = 0
